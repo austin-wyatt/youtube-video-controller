@@ -1,0 +1,259 @@
+html, body{
+	height:50%;
+	height: 200px;
+	max-height: 230px;
+	min-width: 160px;
+}
+
+
+.title{
+	display:none;
+}
+.dropbtn {
+  background-color: rgb(25, 103, 155);
+  color: white;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 1px 1px 0px 0px rgb(0, 0, 0, 0.3);
+  min-width: 100px;
+  width: 100px;
+  height: 50px;
+}
+.dropbtn:hover, .dropbtn:focus, .otherbtn:hover, .otherbtn:focus, .smallbutton:hover, .smallbutton:focus {
+  background-color: rgb(17, 78, 119);
+}
+.queueCanvas {
+	background-color: rgb(25, 103, 155);
+	color: white;
+	padding-right: 30px;
+	padding-left: 30px;
+	font-size: 16px;
+	cursor: pointer;
+	box-shadow: 1px 1px 0px 0px rgb(0, 0, 0, 0.3);
+	min-width: 100px;
+	width: 100px;
+	height: 50px;
+  }
+.dropdown {
+  min-width: 100px;
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  max-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  word-wrap:break-word;
+  left: 0px;
+  top:50px;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+  user-select: none;
+  font-size: 14px;
+  font-family: Arial;
+}
+.dropdown a:hover {background-color: #ddd;}
+
+.otherbtn{
+  background-color: rgb(25, 103, 155);
+  color: white;
+  padding: 10px;
+  font-size: 10px;
+  box-shadow: 1px 1px 0px 0px rgb(0, 0, 0, 0.3);
+  border: 0px none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.volumeslider{
+	width: 100%;
+}
+.slider{
+	-webkit-appearance: none;
+	width: 130px;
+	height: 15px;
+	background: #cfcfcf;
+	outline: none;
+	opacity: .7;
+}
+.slider:hover{
+	opacity: 0.9;
+}
+
+.sliderPlayback{
+	-webkit-appearance: none;
+	width: 160px;
+	height: 15px;
+	background: #cfcfcf;
+	outline: none;
+	opacity: .7;
+}
+.sliderPlayback:hover{
+	opacity: 0.9;
+}
+/* rgb(17, 78, 119) */
+.sliderclass::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	background: rgb(17, 78, 119);
+	cursor: pointer;
+}
+.sliderclass2::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	background: rgb(17, 78, 119);
+	cursor: pointer;
+}
+
+.drop-children{
+	height: 32px;
+}
+.spacemaker{
+	height: 10px;
+}
+
+.optionsbuttons{
+	position: absolute;
+	top:60px;
+	left:148px;
+	margin-top: 4px;
+	border: 0px none;
+	box-shadow: 1px 1px 0px 0px rgb(0, 0, 0, 0.3);
+}
+.smallbutton{
+	width: 20px;
+	height: 20px;
+	background: rgb(25, 103, 155);
+	box-shadow: 1px 1px 0px 0px rgb(0, 0, 0, 0.3);
+	border: 0px none;
+	cursor: pointer;
+	position: absolute;
+}
+.options{
+	top: 22px;
+	left: 0px
+}
+.info{
+	top: 44px;
+	left: 0px;
+}
+.disable{
+	top: 105px;
+	left: 0px;
+}
+.playlist{
+	top: 0px;
+	left: 0px;
+}
+
+.playbackslider{
+	position:absolute;
+	top:110px;
+	left: 6px;
+}
+
+
+.loop:focus {
+	background: rgb(25, 103, 155);
+}
+.loopDark:focus {
+	background-color: #114a70;
+}
+
+.loop{
+	margin-top: 1px;
+	box-shadow: 1px 1px 0px 0px rgb(0, 0, 0, 0.3);
+}
+.loopDark{
+	background-color: #114a70;
+	margin-top: 1px;
+	box-shadow: 1px 1px 0px 0px rgb(0, 0, 0, 0.3);
+}
+
+.disableRed:focus{
+	background-color: #802020;
+}
+.disableGreen:focus{
+	background-color: #237827;
+}
+.disableRed:hover{
+	background-color: #802020;
+}
+.disableGreen:hover{
+	background-color: #237827;
+}
+.disableRed{
+	background-color: #b33030;
+	margin-top: 1px;
+	box-shadow: 1px 1px 0px 0px rgb(0, 0, 0, 0.3);
+}
+.disableGreen{
+	background-color: #42f54b;
+	margin-top: 1px;
+	box-shadow: 1px 1px 0px 0px rgb(0, 0, 0, 0.3);
+}
+
+.timebar{
+	user-select: none;
+	position: absolute;
+	left: 2px;
+	width: 160px;
+	height: 10px;
+	background:#cfcfcf;
+}
+.moveDown{
+	position: absolute;
+	top:175px;
+}	
+
+.chasebar{
+	height: 10px;
+	opacity: .5;
+	background: #d93e23;
+	width: 0%;
+}
+
+.primaryOptions{
+	margin-top: 1px;
+}
+
+img { 
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+
+}
+
+.volumeButton{
+	width: 20px;
+	height: 20px;
+	background: rgb(25, 103, 155);
+	box-shadow: 1px 1px 0px 0px rgb(0, 0, 0, 0.3);
+	border: 0px none;
+	cursor: pointer;
+	margin-top: 1px;
+}
+
+.selected{
+	background: #0b314b;
+}
+

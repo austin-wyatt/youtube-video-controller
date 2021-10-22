@@ -1,0 +1,61 @@
+<head> <link rel="stylesheet" href = "popup.css"></head>
+<script src="jquery-3.4.1.min.js"></script>
+<title class = "hide">Video Controller</title>
+
+<body>
+<div id='page1'>
+	<div class="dropdown" id = "dropdownMenu">
+	<canvas class="dropbtn dark" id="tabDropdown" >Tabs</canvas>
+	<div id="dropdownContent" class="dropdown-content">
+	</div>
+	</div>
+
+	<div><canvas class = "hide "id = "testCanvas" style = "display: none"></div>
+
+	<div class = "optionsbuttons">
+	<button class = "smallbutton dark playlist" title = "Playlist" id='playlistButton'><img src="./images/playlist.svg" style='margin-left:-4; margin-top:1px; width:17px; height:17px;'></img> </button>
+	<button class = "smallbutton dark options" title = "Secondary options" id='optionButton'><img src="./images/playOptions.svg" style='margin-left:-4; width:17px; height:17px;'></img> </button>
+	<button class = "smallbutton dark info" title = "Info" id='infoButton'><img src="./images/options.svg" style='margin-left:-4; width:17px; height:17px;'></button>
+	<button class = "smallbutton dark disable disableGreen" title = "Disable extension autoplay for this tab (default youtube autoplay functionality will be used)" id='disableButton'></button>
+	</div>
+
+	<div class = "volumeslider hideStartup secondaryOptions playbackslider moveDown">
+		<input type="range" min="0" max="500" value="100" class="sliderPlayback" id="playbackSlider" title = "Playback Rate: Double click to reset">
+	<div class = "timebar hideStartup secondaryOptions" id="timebar">
+		<div class = "chasebar"></div>
+	</div>
+
+	</div>
+	<!-- #2980B9 -->
+	<div class = "infoOptions hideStartup">
+		Zoom: 
+		<select class = "zoominfo">
+			<option value="1">1</option>
+			<option value="1.5">1.5</option>
+			<option value="2">2</option>
+			<option value="2.5">2.5</option>
+			<option value="3">3</option>
+		</select>
+	</div>
+
+	<button id = "loopBtn" class = "otherbtn loop dark secondaryOptions hideStartup"> Loop</button>
+
+	<button id = "playBtn" class = "otherbtn dark primaryOptions"> Play</button> <br />
+	<button id = "pauseBtn" class = "otherbtn dark primaryOptions"> Pause</button> <br />
+	<button id = "nextVideo" class = "otherbtn dark primaryOptions" > Next Video</button> <br />
+	<button id = "prevVideo" class = "otherbtn dark primaryOptions"> Previous Video</button> <br />
+
+	<div class = "volumeslider primaryOptions">
+		<button id = 'volumeButton'  class='volumeButton primaryOptions'><img id='volumeImage' src="./images/volume.svg" style='margin-left:-4; width:17px; height:17px;'> </button>
+		<input type="range" min="0" max="100" value="25" class="slider" id="vSlider" title = "Volume" >
+	</div>
+	<div class = "spacemaker"></div>
+</div>
+
+<div id='page2'>
+	<canvas class="queueCanvas" id="currentlyPlaying" ></canvas>
+</div>
+
+<script src = "popup.js"></script>
+</body>
+
