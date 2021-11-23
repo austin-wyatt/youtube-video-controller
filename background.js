@@ -8,8 +8,8 @@
   }});
   
   chrome.commands.onCommand.addListener(function(command){
+	console.log(command)
 	if(command === 'pause-video'){
-		console.log("asd")
 		chrome.storage.local.get("default_tab",function(result){
 			var text = "if(ytplay.getVideoStats().state == 4 || ytplay.getVideoStats().state == 45){ytplay.playVideo()}else{ytplay.pauseVideo()}";
 			//console.log(result);

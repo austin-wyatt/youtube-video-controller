@@ -1,6 +1,6 @@
 {
   "name": "Youtube Video Controller",
-  "version": "1.18",
+  "version": "1.18.2",
   "description": "Disable automatic pausing, set an end time for videos, interact with videos from any tab with chrome extension GUI",
   "background": {
     "scripts": ["background.js"]
@@ -38,13 +38,15 @@
    "commands":{
 	"pause-video":{
 		"suggested_key":{
-			"windows": "Ctrl+Space",
-			"mac": "Command+Space"
+			"default": "Alt+Q",
+			"windows": "Alt+Q",
+			"mac": "Alt+Q"
 		},
-		"description": "Open popup"
+		"description": "Pause video"
 	},
 	"next-video":{
 		"suggested_key":{
+			"default": "Alt+2",
 			"windows": "Alt+2",
 			"mac": "Alt+2",
 			"chromeos": "Ctrl+Shift+X"
@@ -53,6 +55,7 @@
 	},
 	"previous-video":{
 		"suggested_key":{
+			"default": "Alt+1",
 			"windows": "Alt+1",
 			"mac": "Alt+1",
 			"chromeos": "Ctrl+Shift+Z"
@@ -61,6 +64,7 @@
 	},
 	"restart-video":{
 		"suggested_key":{
+			"default": "Alt+3",
 			"windows": "Alt+3",
 			"mac": "Alt+3",
 			"chromeos": "Ctrl+Shift+V"

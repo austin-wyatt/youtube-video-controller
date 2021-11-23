@@ -185,6 +185,8 @@ html, body{
 	box-shadow: 1px 1px 0px 0px rgb(0, 0, 0, 0.3);
 }
 
+
+
 .disableRed:focus{
 	background-color: #802020;
 }
@@ -257,3 +259,14 @@ img {
 	background: #0b314b;
 }
 
+.reviewLink
+{
+	cursor: pointer;
+	font-size: 10px;
+	height: auto;
+}
+
+.infoOptions
+{
+	margin-top: 5px;
+}
