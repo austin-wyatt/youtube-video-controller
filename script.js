@@ -1,5 +1,3 @@
-//incorporate VIDEO html5 tag
-
 function eventFire(el, etype) {
 	try {
 		if (el.fireEvent) {
@@ -125,10 +123,15 @@ const customRecommendedVideo = (index) => {
 }
 
 function customNextVideo() {
+	ytplay.pauseVideo();
+	vidplayer.pause()
+	vidplayer.currentTime = 0
+	actualEnd = 999999
+	timeEnd = 999998
+
 	var xpathResult = document.evaluate("//*[@id='wc-endpoint']", document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
 	var playlistIndex = parseInt(document.URL.substr(document.URL.indexOf("index") + 6))
 	var i = 0;
-	ytplay.pauseVideo();
 
 	if (!xpathResult.snapshotItem(i)) {
 		nextRecommendedVideo()
@@ -313,9 +316,9 @@ function checkTime() {
 			ytplay.seekTo(0)
 		}
 		else if (!tabDisabled) {
-			// console.log(tabDisabled)
+			ytplay.seekTo(0);
 			ytplay.pauseVideo();
-			customNextVideo()
+			customNextVideo();
 		}
 		else {
 			// ytplay.pauseVideo()

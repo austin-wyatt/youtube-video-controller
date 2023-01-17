@@ -511,13 +511,13 @@ function setCurrent(tab) {
 
 function updateCurrent(id) {
 	//volumeObj[currentTab]=currentVolume;
-	if (typeof volumeObj[id.path[0].name] !== 'undefined') {
-		setVolume(volumeObj[id.path[0].name]);
+	if (typeof volumeObj[id.srcElement.name] !== 'undefined') {
+		setVolume(volumeObj[id.srcElement.name]);
 		//console.log("changed");
 	}
 
-	if (!parseInt(id.path[0].name) == false) {
-		currentTab = id.path[0].name;
+	if (!parseInt(id.srcElement.name) == false) {
+		currentTab = id.srcElement.name;
 		chrome.tabs.get(+currentTab, (tab) => currentTabTitle = tab.title)
 
 		if (!id.altKey) {
@@ -543,12 +543,12 @@ function updateCurrent(id) {
 	}
 	else {
 		//UPDATE URL WITH PLAYLIST VIDEO
-		//chrome.tabs.update(parseInt(currentTab),{url: "https://www.youtube.com"+id.path[0].name});
+		//chrome.tabs.update(parseInt(currentTab),{url: "https://www.youtube.com"+id.srcElement].name});
 		let msg =
 		{
 			id: "playlist_video",
-			index: parseInt(id.path[0].getAttribute('index')),
-			altIndex: parseInt(id.path[0].getAttribute('altIndex'))
+			index: parseInt(id.srcElement.getAttribute('index')),
+			altIndex: parseInt(id.srcElement.getAttribute('altIndex'))
 		}
 
 		chrome.tabs.sendMessage(parseInt(currentTab), msg);

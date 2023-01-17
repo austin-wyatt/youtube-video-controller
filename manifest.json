@@ -1,6 +1,6 @@
 {
 	"name": "Youtube Video Controller",
-	"version": "1.18.2",
+	"version": "1.18.3",
 	"description": "Disable automatic pausing, set an end time for videos, interact with videos from any tab with chrome extension GUI",
 	"background": {
 		"scripts": [
